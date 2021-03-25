@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "^4.0.1"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -26,12 +26,12 @@
   ],
   "devDependencies": {
     "@applitools/eyes-storybook": "latest",
-    "@storybook/addon-actions": "^6.1.15",
-    "@storybook/addon-links": "^6.1.15",
-    "@storybook/addons": "^6.1.15",
-    "@storybook/react": "^6.1.15",
+    "@storybook/addon-actions": "^6.1.21",
+    "@storybook/addon-links": "^6.1.21",
+    "@storybook/addons": "^6.1.21",
+    "@storybook/react": "^6.1.21",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
-    "core-js": "^3.8.3"
+    "core-js": "^3.9.1"
   }
 }
