@@ -6,6 +6,7 @@ Learn more about how to install and start this project with our [Storybook React
 
 <https://applitools.com/tutorials/storybook-react.html>
 
+_If you're looking for the CSF format for creating Storybook stories, check out the [Storybook CSF React tutorial](https://github.com/applitools/tutorial-storybook-csf-react)._
 
 ## More Information
 
