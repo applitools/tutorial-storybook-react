@@ -34,6 +34,9 @@
     "babel-runtime": "^6.26.0",
     "core-js": "^3.19.1"
   },
+  "overrides": {
+	"lodash": "^4.17.21"
+  },
   "engines": {
     "node": ">=12.13.0"
   }
