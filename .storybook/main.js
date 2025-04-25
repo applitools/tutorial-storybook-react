@@ -20,7 +20,6 @@ const config = {
   },
 
   "staticDirs": [
-    "../public"
   ],
 
   docs: {
