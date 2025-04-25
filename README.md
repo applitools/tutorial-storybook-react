@@ -20,8 +20,8 @@ To authenticate via the Applitools server and run tests, you need to set your AP
         * Windows: `set APPLITOOLS_API_KEY=<Your API Key>`
         
     * Set your Applitools API Key inside the **applitools.config.js** file via the `apiKey` setting.
-
-    Note: If you are not using the Eyes public cloud, you will need to update the `serverUrl` to your Eyes server URL in the **applitools.config.js** configuration file.
+        
+        * Note: If you are not using the Eyes public cloud, you will need to update the `serverUrl` to your Eyes server URL in the **applitools.config.js** configuration file.
 
 3. Run the example test
     ```sh
