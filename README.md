@@ -14,10 +14,14 @@ _If you're looking for the CSF format for creating Storybook stories, check out 
 
 To authenticate via the Applitools server and run tests, you need to set your API key provided from Applitools Eyes. For details on how to retrieve your API key, see [the Applitools documentation](https://applitools.com/tutorials/getting-started/retrieve-api-key).
 
-2. Set your Applitools API Key as an environment variable. 
-    * macOS/Linux: `export APPLITOOLS_API_KEY=<Your API Key>`
-    * Windows: `set APPLITOOLS_API_KEY=<Your API Key>`
-        * Alternatively, you can add your Applitools API Key directly inside the **applitools.config.js** file via the `apiKey` setting.
+2. Choose one of the following options to set your API Key.
+    * Set your Applitools API Key as an environment variable. 
+        * macOS/Linux: `export APPLITOOLS_API_KEY=<Your API Key>`
+        * Windows: `set APPLITOOLS_API_KEY=<Your API Key>`
+        
+    * Set your Applitools API Key inside the **applitools.config.js** file via the `apiKey` setting.
+
+    Note: If you are not using the Eyes public cloud, you will need to update the `serverUrl` to your Eyes server URL in the **applitools.config.js** configuration file.
 
 3. Run the example test
     ```sh
