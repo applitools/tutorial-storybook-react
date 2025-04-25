@@ -2,9 +2,26 @@
 
 Get started with Applitools Eyes visual testing with this example of using [Storybook](https://storybook.js.org/) and the [Eyes Storybook SDK](https://applitools.com/tutorials/sdks/storybook).
 
-Learn more about how to install and start this project with our [Storybook React tutorial](https://applitools.com/tutorials/sdks/storybookl)!
+Learn more about how to install and start this project with our [Storybook React tutorial](https://applitools.com/tutorials/sdks/storybook)!
 
 _If you're looking for the CSF format for creating Storybook stories, check out the [Storybook CSF React tutorial](https://github.com/applitools/tutorial-storybook-csf-react)._
+
+# Installation
+1. Install the dependencies
+    ```sh
+    npm install
+    ```
+
+To authenticate via the Applitools server and run tests, you need to set your API key provided from Applitools Eyes. For details on how to retrieve your API key, see [the Applitools documentation](https://applitools.com/tutorials/getting-started/retrieve-api-key).
+
+2. Set your Applitools API Key as an environment variable. 
+    * macOS/Linux: `export APPLITOOLS_API_KEY=<Your API Key>`
+    * Windows: `set APPLITOOLS_API_KEY=<Your API Key>`
+
+3. Run the example test
+    ```sh
+    npx eyes-storybook
+    ```
 
 ## More Information
 
