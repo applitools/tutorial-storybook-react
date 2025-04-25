@@ -6,7 +6,7 @@ Learn more about how to install and start this project with our [Storybook React
 
 _If you're looking for the CSF format for creating Storybook stories, check out the [Storybook CSF React tutorial](https://github.com/applitools/tutorial-storybook-csf-react)._
 
-# Installation
+# Installation & Run
 1. Install the dependencies
     ```sh
     npm install
@@ -26,6 +26,8 @@ To authenticate via the Applitools server and run tests, you need to set your AP
     ```sh
     npx eyes-storybook
     ```
+
+4. After the example tests complete. Visit your Applitools Eyes dashboard to view the results.
 
 ## More Information
 
