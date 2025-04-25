@@ -18,7 +18,7 @@ To authenticate via the Applitools server and run tests, you need to set your AP
     * macOS/Linux: `export APPLITOOLS_API_KEY=<Your API Key>`
     * Windows: `set APPLITOOLS_API_KEY=<Your API Key>`
 
-    **Alternatively, you can add your Applitools API Key to the applitools.config.js file.**
+    Alternatively, you can add your Applitools API Key inside the **applitools.config.js** file via the `apiKey` setting.
 
 3. Run the example test
     ```sh
