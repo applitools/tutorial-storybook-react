@@ -18,6 +18,8 @@ To authenticate via the Applitools server and run tests, you need to set your AP
     * macOS/Linux: `export APPLITOOLS_API_KEY=<Your API Key>`
     * Windows: `set APPLITOOLS_API_KEY=<Your API Key>`
 
+    **Alternatively, you can add your Applitools API Key to the applitools.config.js file.**
+
 3. Run the example test
     ```sh
     npx eyes-storybook
