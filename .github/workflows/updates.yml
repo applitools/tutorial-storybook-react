@@ -2,7 +2,7 @@ name: Updates
 
 on:
   schedule:
-    - cron: "0 12 * * *"
+    - cron: "0 12 * * *"  # Runs daily at 12:00 UTC
   workflow_dispatch:
 
 jobs:
@@ -10,28 +10,33 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - name: Use Node.js 12.x
-        uses: actions/setup-node@v1
+      - name: Set up Node.js 20.x
+        uses: actions/setup-node@v4
         with:
-          node-version: 12.x
+          node-version: 20.x
 
-      - run: npm install
+      - name: Install dependencies
+        run: npm install
 
-      - run: npm install -g npm-check-updates
+      - name: Install npm-check-updates
+        run: npm install -g npm-check-updates
 
       - name: Check for Updates
         run: ncu -u
     
-      - name: Install Updates
+      - name: Install Updated Packages
         run: npm install
       
-      - run: npx eyes-storybook
+      - name: Run Eyes Storybook
+        run: npx eyes-storybook
         env: 
           APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
-        
-      - uses: mikeal/publish-to-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH_NAME: 'master'
+
+      - name: Publish Changes to GitHub
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: 'master'
+
