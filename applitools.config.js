@@ -9,5 +9,11 @@ module.exports = {
     { width: 1024, height: 768, name: 'chrome' },
     // { width: 1024, height: 768, name: 'firefox' },
     // { chromeEmulationInfo: { deviceName: 'Galaxy S20' } },
- ] 
+ ],
+ puppeteerOptions: process.env.GITHUB_ACTIONS
+  ? {
+      executablePath: '/usr/bin/chromium', 
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
+    }
+  : undefined, 
 }
