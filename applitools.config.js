@@ -10,6 +10,7 @@ module.exports = {
     // { width: 1024, height: 768, name: 'firefox' },
     // { chromeEmulationInfo: { deviceName: 'Galaxy S20' } },
  ],
+ runInDocker: true
 //  puppeteerOptions: process.env.GITHUB_ACTIONS
 //   ? {
 //       executablePath: '/usr/bin/chromium', 
